@@ -25,5 +25,5 @@
 
 Echo —— Nodejs developer
 
-Echo是一个被修飞机耽误的🥬🐥程序员🤪
+Echo是一个被修飞机耽误的 🥬 🐥 程序员🤪
 
