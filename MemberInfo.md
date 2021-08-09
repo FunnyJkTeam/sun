@@ -26,3 +26,8 @@ Echo —— Nodejs developer
 
 Echo是一个被修飞机耽误的 🥬 🐥 程序员🤪
 
+
+
+Kevin —— Java & 数据开发
+
+一个想当产品的程序员，比较注重数据和建模。
