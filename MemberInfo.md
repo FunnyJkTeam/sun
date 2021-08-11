@@ -20,3 +20,21 @@ ifun —— C/C++ developer
 
 ifun是一个喜欢旅行的程序员:blush:
 
+
+
+# 项目分工
+
+- 后台：spring
+  - ch3n90
+  - kevin
+  - 随他去
+  - ShawnKung
+  - gkirito
+- web：react
+  - echo
+  - istommao
+- Android：peterbanban
+- IOS：？
+- PC：ifun
+- UI：Crystal雨婕
+
