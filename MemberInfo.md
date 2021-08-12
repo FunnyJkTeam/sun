@@ -36,5 +36,5 @@ ifun是一个喜欢旅行的程序员:blush:
 - Android：peterbanban
 - IOS：？
 - PC：ifun
-- UI：Crystal雨婕
+- UI：Crystal
 
