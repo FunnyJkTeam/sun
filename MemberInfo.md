@@ -22,7 +22,7 @@ ifun是一个喜欢旅行的程序员:blush:
 
 peterbanban —— Android developer
 
-banban是一个喜欢非典型程序员，喜欢旅行和烫发
+banban是一个非典型程序员，喜欢旅行和烫发
 
 # 项目分工
 
