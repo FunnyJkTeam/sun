@@ -22,6 +22,19 @@ ifun是一个喜欢旅行的程序员:blush:
 
 
 
-Kevin —— Java & 数据开发
+# 项目分工
 
-一个想当产品的程序员，比较注重数据和建模。
+- 后台：spring
+  - ch3n90
+  - kevin
+  - 随他去
+  - ShawnKung
+  - gkirito
+- web：react
+  - echo
+  - istommao
+- Android：peterbanban
+- IOS：？
+- PC：ifun
+- UI：Crystal
+
