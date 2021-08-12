@@ -35,6 +35,7 @@ banban是一个非典型程序员，喜欢旅行和烫发
 - web：react
   - echo
   - istommao
+  - Haixing
 - Android：peterbanban
 - IOS：？
 - PC：ifun
