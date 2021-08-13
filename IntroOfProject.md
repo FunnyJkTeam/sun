@@ -24,7 +24,7 @@
 
 1. 用户地域分布
 
-![](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810100343262_13542.png)
+![](.\_v_images\20210810100343262_13542.png)
 
 
 
@@ -33,36 +33,36 @@
 
 2. 用户年龄分布
 
-![](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810102707563_15101.png)
+![](.\_v_images\20210810102707563_15101.png)
 
 
 ### 需求场景分析
 
-![用户场景分析](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114251311_15683.png)
+![用户场景分析](.\_v_images\20210810114251311_15683.png)
 
 
 
 
-![需求分类](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114315491_29181.png)
+![需求分类](.\_v_images\20210810114315491_29181.png)
 
 
 ### 竞品分析
 
-![极简待办](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114329523_30111.png)
-![ToDo清单](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114350838_12580.png)
+![极简待办](.\_v_images\20210810114329523_30111.png)
+![ToDo清单](.\_v_images\20210810114350838_12580.png)
 
 
 
 
 
-![滴答清单](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114336734_18424.png)
+![滴答清单](.\_v_images\20210810114336734_18424.png)
 
 ### 核心功能分析——添加事件
 
 
 1. 滴答清单
 
-![](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114533328_26198.png)
+![](.\_v_images\20210810114533328_26198.png)
 
 
 
@@ -77,7 +77,7 @@
 
 3. 极简待办清单
 
-![](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810114632304_20158.png)
+![](.\_v_images\20210810114632304_20158.png)
 
 
 
@@ -93,7 +93,7 @@
 
 整合三个产品可以得出待办事项核心功能的流程
 
-![](F:\lzh-mainline-master\AAA-ToDo-Project\todo-task\_v_images\20210810131722477_10282.png)
+![](.\_v_images\20210810131722477_10282.png)
 
 
 
