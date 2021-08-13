@@ -24,6 +24,8 @@ peterbanban —— Android developer
 
 banban是一个非典型程序员，喜欢旅行和烫发
 
+SmartNan —— 机器视觉开发。
+SmartNan是一个菜鸡程序员，喜欢跑步和发呆。
 # 项目分工
 
 - 后台：spring
