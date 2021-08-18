@@ -86,7 +86,7 @@
 
   + method:post
 
-  + uri:/sys/verification/v1/code
+  + uri:/sys/v1/verification/code
 
   + Content-Type:application/json
 
@@ -129,7 +129,7 @@
 
   + method:post
 
-  + uri:/sys/auth/v1/code
+  + uri:/sys/v1/auth/code
 
   + Content-Type:application/json
 
