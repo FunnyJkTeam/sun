@@ -137,14 +137,14 @@
     {
         "accountInfo": {
             "accountType": "phone",  // 待验证的账号类型，如：手机号、邮箱等
-            "account": "15100000"  // 账号ID
+            "account": "15100000",  // 账号ID
+             "vCode": "121331"
         },
         "deviceInfo": {
             "device": "PC",  // 设备类型
          	"deviceId": "f923n23ba3",  // 设备ID
             "OS":"ios 14.5"
-        },
-        "vCode": "121331"
+        }
     }
     ```
 
