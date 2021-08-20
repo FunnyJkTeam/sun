@@ -76,7 +76,7 @@
 1. 转移API于按版本号区分的子目录，考虑一个api一个文档，文档名与api名相同，如 ./v1/login.md
 2. 一个控制器中只存放一个接口
 
-### 3.1 验证码注册
+### 3.1 发送手机验证码
 
 #### 3.1.1 接口描述
 
@@ -117,7 +117,23 @@
 
 #### 3.1.2 时序图
 
-![发送验证码](./images/发送验证码.png)
+```mermaid
+sequenceDiagram
+participant C as Client
+participant S as Server
+participant R as Redis
+
+C ->>+ S: /sys/v1/verification/code
+S ->> S: 判断是否存在频刷验证码
+S ->> S: 生成验证码
+S ->>+ R: 保存验证码
+Note right of R: 设置验证码生命周期
+R -->>- S: 返回 
+S -->>- C: 返回成功
+
+```
+
+------
 
 ### 3.2 验证码登入
 
@@ -166,7 +182,32 @@
 
 #### 3.2.2 时序图
 
-![验证码登入](./images/验证码登入.png)
+```mermaid
+sequenceDiagram
+participant C as Client
+participant S as Server
+participant R as Redis
+participant D as Database
+
+C ->>+ S: /sys/v1/auth/code
+S ->>+ R: 获取验证码
+R -->>- S: 验证码
+S ->> S: 判断验证码
+
+S ->> S: 判断用户是否存在
+S ->>+ D: 保存用户
+D -->>- S: 
+S ->>+ D: 保存设备信息
+D -->>- S: 
+S ->> S: 生成TOKEN和RefreshToken
+S ->>+ D: 保存RefreshToken
+D -->>- S: 
+Note over R: 清除验证码
+S -->>- C: 返回成功
+
+```
+
+------
 
 ### 3.3 密码登入
 
@@ -186,9 +227,9 @@
     {
         "accountInfo": {
             "accountType": "phone",  // 待验证的账号类型，如：手机号、邮箱等
-            "accountId": "15100000"  // 账号ID
+            "accountId": "15100000",  // 账号ID
+             "password": "9345nasd92342",  // md5值
         },
-        "password": "9345nasd92342",  // md5值
         "deviceInfo": {
             "device": "web",  // 设备类型
          	"deviceId": "f923n23ba3",  // 设备ID
@@ -215,7 +256,85 @@
 
 #### 3.3.2 时序图
 
-![验证码登入](./images/密码登入.png)
+```mermaid
+sequenceDiagram
+participant C as Client
+participant S as Server
+participant D as Database
+
+C ->>+ S: /sys/v1/auth/password
+S ->>+ D: 获取用户信息
+D -->>- S:  
+S ->> S: 校验用户信息
+S ->> S: 生成TOKEN和RefreshToken
+S ->>+ D: 保存RefreshToken
+D -->>- S: 
+S -->>- C: 返回成功
+
+```
+
+
+
+### 3.4 发送电子邮件验证码
+
+#### 3.4.1 接口描述
+
+该接口用于发送登入（注册）时的邮件验证码功能。该接口要防止被爆破。（增加每日与实时限频、设备封禁、账号封禁等）
+
++ 请求
+
+  + method:post
+
+  + uri:/sys/v1/email/code
+
+  + Content-Type:application/json
+
+  + ```json
+    {
+        "accountInfo": {
+            "accountType": "phone",  // 待验证的账号类型，如：手机号、邮箱等
+            "account": "ch3ng@gmail.com"  // 账号ID
+        }
+    }
+    ```
+
++ 响应
+
+  + ```json
+    {
+        "code": 200,
+        "result": "success"
+    }
+    ```
+
+  + ```json
+    {
+        "code": 250,
+        "result": "访问频繁"
+    }
+    ```
+
+#### 3.4.2 时序图
+
+```mermaid
+sequenceDiagram
+participant C as Client
+participant S as Server
+participant R as Redis
+
+C ->>+ S: /sys/v1/email/code
+S ->> S: 判断是否存在频刷验证码
+S ->> S: 生成验证码
+S ->>+ R: 保存验证码
+Note right of R: 设置验证码生命周期
+R -->>- S: 返回 
+S -->>- C: 返回成功
+
+```
+
+------
+
+
 
 ## 附录
 
