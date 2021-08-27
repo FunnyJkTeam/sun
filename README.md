@@ -4,6 +4,7 @@
 + [接口文档](./Docs/Dev.md)
 + [开发需求和建议（长期更新）](./PRD/develop_guide.md)
 + [产品需求文档（长期更新）](./PRD/PRD.md)
++ [Web原型图](https://funnyjkteam.github.io/Jupiter/)
 
   
 
